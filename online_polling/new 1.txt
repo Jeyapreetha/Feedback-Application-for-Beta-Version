@@ -1,0 +1,5 @@
+echo  $query = "SELECT SUM(a.poll_value) as total, a.product_id,a.poll_id,b.poll_content,b.id FROM tbl_poll a LEFT JOIN tbl_poll_description b ON a.poll_id=b.id
+	WHERE `a.product_id` =".$_POST["id"]." GROUP BY `a.poll_id`";
+	
+	
+	SELECT SUM(poll_value), product_id FROM `tbl_poll` WHERE product_id = 11 GROUP BY poll_id;
